@@ -901,7 +901,9 @@ transition:background-color var(--time-transition);
                 }
         /*--------------Customers------------------ */
     
-    
+    .customers-section > .container{
+      max-width: 584px;
+    }
         .customers-list {
           display: flex;
           flex-wrap: wrap;
@@ -1014,7 +1016,9 @@ transition:background-color var(--time-transition);
                    padding-top: 120px;
                    padding-bottom: 120px;
                  }
-        
+                 .customers-section>.container {
+                   max-width: 1158px;
+                 }
                  .customers-list {
                    display: flex;
                    flex-wrap: nowrap;
