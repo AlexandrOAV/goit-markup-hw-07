@@ -1,0 +1,143 @@
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+
+    /* ----------section-hero --------------*/
+    .hero {
+        padding-top: 109px;
+        padding-bottom: 108px;
+    }
+
+    .hero-caption {
+        max-width: 496px;
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 1.07;
+    }
+
+    .hero-btn {
+        margin-top: 43px;
+    }
+
+    /*-------- section the best ----------*/
+    .best {
+        padding-top: 96px;
+        padding-bottom: 96px;
+    }
+
+    .best-list {
+        gap: 24px;
+
+    }
+
+    .best-list-hd {
+        text-align: left;
+    }
+
+    .best-item {
+        width: calc((100% - 24px) / 2);
+    }
+
+    .best-item:nth-child(-n+2) {
+        margin-bottom: 48px;
+    }
+
+    /* --------section our team -------*/
+    .team {
+        padding-bottom: 104px;
+    }
+
+    .team>.container {
+        max-width: 584px;
+    }
+
+    .team-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+
+    .team-item {
+        width: calc((100% - 24px) / 2);
+    }
+
+    .team-item:nth-child(-n+2) {
+        margin-bottom: 40px;
+    }
+
+    /*--------------Customers------------------ */
+
+    .customers-section>.container {
+        max-width: 584px;
+    }
+
+    .customers-list {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 24px;
+    }
+
+    .customers-item {
+        width: calc((100% - 48px) / 3);
+
+    }
+
+    .customers-item:nth-child(-n+4) {
+        margin-bottom: 0px;
+    }
+
+    .customers-item:nth-child(-n+3) {
+        margin-bottom: 48px;
+    }
+
+    /*----------------- footer-------------------------------- */
+ .last>.container{
+max-width: 584px; 
+ }
+    .last-block {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+        justify-content: start;
+        align-items: baseline;
+    }
+
+    .last-logo-block .link-logo {
+       
+        margin: 0;
+        display: flex;
+        justify-content: start;
+    }
+    .last-logo-block{
+        margin-bottom: 48px;
+    }
+
+    .last-text { 
+        max-width: 264px;
+        font-weight: 400;
+          }
+
+    .last-social {
+        margin: 0;
+
+    }
+
+    .last-social-text {
+    text-align: left;
+    }
+
+    .footer-form-block {
+        margin: 0;
+    }
+
+    .input-block-footer {
+        flex-wrap: nowrap;  
+        gap: 24px;   
+    }
+
+    .footer-input {
+        min-width: 264px;
+      }  
+ }

@@ -408,45 +408,50 @@ color: var(--active-address-color);
  /*----------------- footer-------------------------------- */
  .last {
   background-color: var(--background-color-herofut);
-  padding-top: 100px;
-  padding-bottom: 100px;
- }
- footer .link-logo {
-color:var(--text-hero);
-margin-right: 0;
- }
- .last-block{
+  padding-top: 96px;
+  padding-bottom: 96px;
+   }
+
+
+ .last-block {
   display: flex;
-  /* gap: 120px; */
-  align-items: baseline;
- }
+  flex-wrap: wrap;
+  gap: 72px;
+  justify-content: center;
+  }
+   .last-logo-block .link-logo {
+     color: var(--text-hero);
+     margin: 0 auto;
+     display: flex;
+     justify-content: center;
+   }
+   .last-text {
+    color: var(--text-futer-color);
+    margin-top: 16px;
+    max-width: 268px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+   }
  .last-social{
-  margin-left: 120px;
-  
- }
+  margin: 0 auto;
+ 
+  }
+       
  .last-social-text{
    margin-bottom: 16px;
-  font-weight: 500;
+   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  text-align: center;
   color:var(--text-hero);
  }
-  .last-text {
-  color: var(--text-futer-color);
-  margin-top: 16px;
-  max-width: 264px;
-  font-weight: 400;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
- }
-.last {
-  padding-top: 100px;
-  padding-bottom: 100px;
-  }
+
+
 .last-social-list {
   display: flex;
   justify-content: center;
-  gap: 24px;
+  gap: 16px;
   margin: 0 auto;
 }
 
@@ -471,15 +476,17 @@ margin-right: 0;
   background-color: #31D0AA;
 }
 .footer-form-block{
-  margin-left: auto;
+  margin:0 auto;
 }
 .input-block-footer{
   display: flex;
-  gap: 24px;
-margin-left: auto;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  width: 100%;
 }
 .footer-input{
-  width: 264px;
+  width: 100%;
   height: 40px;
   padding: 8px 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -832,208 +839,8 @@ transition:background-color var(--time-transition);
 }
 
  /* ---------------Media-zapit-------------------- */
-@media screen and (min-width: 480px) {
-  .container {
-      max-width: 428px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;}
-    /* ----------section-hero --------------*/
-    .hero {    
-        padding-top: 109px;
-        padding-bottom: 108px;
-       }
-    
-      .hero-caption {
-        max-width: 496px;
-        font-weight: 700;
-        font-size: 56px;
-        line-height: 1.07;
-                     }
-    
-      .hero-btn {
-            margin-top: 43px;
-              }
-      /*-------- section the best ----------*/
-            .best {
-              padding-top: 96px;
-              padding-bottom: 96px;
-            }
-      
-            .best-list {
-               gap: 24px;
-              
-            }
-      
-            .best-list-hd {
-              text-align: left;
-             }
-      
-            .best-item {
-              width: calc((100% - 24px) / 2);
-             }
-      .best-item:nth-child(-n+2)  {
-        margin-bottom: 48px;
-      }
-     
-    /* --------section our team -------*/
-        .team {
-         padding-bottom: 104px;
-        }
-    
-        .team > .container {
-         max-width: 584px;
-        }
-    
-        .team-list {
-          display: flex;
-          flex-wrap: wrap;
-          gap: 24px;   
-        }
-           
-        .team-item {
-          width: calc((100% - 24px) / 2);
-           }
-       .team-item:nth-child(-n+2) {
-        margin-bottom: 40px;
-                }
-        /*--------------Customers------------------ */
-    
-    .customers-section > .container{
-      max-width: 584px;
-    }
-        .customers-list {
-          display: flex;
-          flex-wrap: wrap;
-          align-items: center;
-          gap: 24px;
-        }
-    
-        .customers-item {
-          width: calc((100% - 48px) / 3);
-         
-        }
-        .customers-item:nth-child(-n+4) {
-         margin-bottom: 0px;
-                }
-        .customers-item:nth-child(-n+3) {
-          margin-bottom: 48px;
-        }
-      }
-@media screen and (min-width: 1200px) {
-  .container {
-      max-width: 1158px;
-      padding-left: 15px;
-      padding-right: 15px;
-    }
-    /* ---------section-hero ------------*/
-         .hero {
-        padding-top: 188px;
-          padding-bottom: 188px;
-          max-width: 1440px;
-                 }
-    
-          
-         .hero-btn {
-           margin-top: 48px;
-         }
-
- /*-------- section the best ----------*/
 
 
- .best {
-   padding-top: 120px;
-   padding-bottom: 120px;
- }
-
-
- .best-list-hd {
-   font-size: 20px;
-   line-height: 1.2;
-   }
-
- .best-item {
-   width: calc((100% - 72px) / 4);
-  }
-     .best-item:nth-child(-n+2) {
-       margin-bottom: 0px;
-     }
-
- .best-item-text {
-   font-weight: 400;
- }
-
- .best-item-icon-block {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   width: 100%;
-   height: 112px;
-  margin-bottom: 8px;
-   background-color: var(--background-radio-button);
-   border-radius: 4px;
- }
- /*------------ section-job------- */
- 
-
- .job {
-  display: block;
-    padding-bottom: 120px;
- }
-
- .job-list {
-   display: flex;
-   gap: 24px;
-   justify-content: center;
- }
-         /* --------section our team -------*/
-         .team {
-          padding-top: 120px;
-          padding-bottom: 120px;
-         }
-    
-         .team > .container {
-           max-width: 1158px;
-         }
-    
-         .team-list {
-           display: flex;
-           flex-wrap: nowrap;
-           gap: 24px;
-         }
-    
-         .team-item {
-           width: calc((100% - 72px) / 4);
-         }
-    
-         .team-item:nth-child(-n+2) {
-           margin-bottom: 0px;
-         }
-                 /*--------------Customers------------------ */
-                 .customers-section {
-                   padding-top: 120px;
-                   padding-bottom: 120px;
-                 }
-                 .customers-section>.container {
-                   max-width: 1158px;
-                 }
-                 .customers-list {
-                   display: flex;
-                   flex-wrap: nowrap;
-                   align-items: center;
-                   gap: 24px;
-                 }
-        
-                 .customers-item {
-                   width: calc((100% - 5*24px) / 6);
-                 }
-                .customers-item:nth-child(-n+3) {
-                  margin-bottom: 0px;
-                }
-        
-}
 
 
 

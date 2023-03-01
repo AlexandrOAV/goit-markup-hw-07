@@ -1,0 +1,151 @@
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1158px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    /* ---------section-hero ------------*/
+    .hero {
+        padding-top: 188px;
+        padding-bottom: 188px;
+        max-width: 1440px;
+    }
+
+
+    .hero-btn {
+        margin-top: 48px;
+    }
+
+    /*-------- section the best ----------*/
+
+
+    .best {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+
+    .best-list-hd {
+        font-size: 20px;
+        line-height: 1.2;
+    }
+
+    .best-item {
+        width: calc((100% - 72px) / 4);
+    }
+
+    .best-item:nth-child(-n+2) {
+        margin-bottom: 0px;
+    }
+
+    .best-item-text {
+        font-weight: 400;
+    }
+
+    .best-item-icon-block {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 112px;
+        margin-bottom: 8px;
+        background-color: var(--background-radio-button);
+        border-radius: 4px;
+    }
+
+    /*------------ section-job------- */
+
+
+    .job {
+        display: block;
+        padding-bottom: 120px;
+    }
+
+    .job-list {
+        display: flex;
+        gap: 24px;
+        justify-content: center;
+    }
+
+    /* --------section our team -------*/
+    .team {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    .team>.container {
+        max-width: 1158px;
+    }
+
+    .team-list {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 24px;
+    }
+
+    .team-item {
+        width: calc((100% - 72px) / 4);
+    }
+
+    .team-item:nth-child(-n+2) {
+        margin-bottom: 0px;
+    }
+
+    /*--------------Customers------------------ */
+    .customers-section {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    .customers-section>.container {
+        max-width: 1158px;
+    }
+
+    .customers-list {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        gap: 24px;
+    }
+
+    .customers-item {
+        width: calc((100% - 5*24px) / 6);
+    }
+
+    .customers-item:nth-child(-n+3) {
+        margin-bottom: 0px;
+    }
+/*----------------- footer-------------------------------- */
+.last {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.last>.container {
+     max-width: 1158px;
+ }
+
+ .last-block {
+     flex-wrap: nowrap;
+     gap: 0;
+     justify-content: center;
+ }
+ 
+ .last-logo-block {
+    margin: 0;
+ }
+
+ .last-social {
+     margin-left: 120px;
+
+ }
+
+ .footer-form-block {
+     margin-left: 80px;
+ }
+
+
+ .footer-input {
+     width: 100%;
+ }
+ }
