@@ -710,11 +710,11 @@ footer .link-logo {
 .close-button {
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 24px;
     height: 24px;
     margin-left: auto;
-    padding: 0;
-    align-items: center;
+    padding: 0;  
     cursor: pointer;
     background-color: var(--color-border-cart-portfolio);
     border: 1px solid rgba(0, 0, 0, 0.1);
