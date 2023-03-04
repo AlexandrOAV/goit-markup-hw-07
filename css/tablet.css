@@ -172,7 +172,7 @@
     }
 
     .customers-item {
-        width: calc((100% - 24px) / 2);
+        width: calc((100% - 48px) / 3);
 
     }
 
@@ -244,5 +244,10 @@ max-width: 584px;
             width: calc((100% - 24px) / 2);
         }
             
-                         
+     /* modal window */
+                .modal-window-one {
+                    
+                    width: 408px;
+                    min-height: 584px;
+                }
  }
