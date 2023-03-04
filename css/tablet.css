@@ -2,8 +2,12 @@
     .container {
         max-width: 768px;
     }
+    .menu-open-btn{
+        display: none;
+    }
            .header-page {
                display: block;
+               padding: 0;
                border-bottom: 1px solid var(--color-border-cart-portfolio);
                box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
                    0px 1px 1px rgba(46, 47, 66, 0.16),
@@ -12,32 +16,29 @@
     
            .header-nav {
                display: flex;
-               align-items: center;
-               margin-right: auto;
+               gap: 120px;
+               align-items: center;                        
            }
     
            .menu {
                display: flex;
                gap: 40px;
-    
-           }
+                              }
     
            .header-container {
                display: flex;
                align-items: center;
+               justify-content: space-between;
            }
     
            .header-nav .link {
                display: block;
-    
-           }
-    
-          
-    
+             }
+
            .menu-link {
-               padding-top: 24px;
-               padding-bottom: 24px;
                position: relative;
+               padding-bottom: 24px;
+               padding-top: 24px;
                font-weight: 500;
                line-height: 1.5;
                letter-spacing: 0.02em;
@@ -62,28 +63,25 @@
                height: 4px;
                width: 100%;
                border-radius: 2px;
-           }
+                         }
     
            /* heder address  */
-    
-           .contact-list {
-               display: flex;
-               gap: 40px;
-           }
-    
-    
+    .contact{
+        display: block;
+          }
+       
            .contact-link {
                display: block;
-               padding-top: 24px;
-               padding-bottom: 24px;
                font-style: normal;
-               line-height: 1.5;
+                font-size: 12px;
+               line-height: calc(14 / 12);
                letter-spacing: 0.02em;
                color: var(--hover-address-color);
                transition: color var(--time-transition);
-    
-           }
-    
+               }
+    .contact-item:not(:last-of-type){
+        margin-bottom: 6px;
+    }
            .contact-link:hover,
            .contact-link:focus {
                color: var(--active-address-color);
@@ -93,8 +91,16 @@
     .hero {
         padding-top: 109px;
         padding-bottom: 108px;
+        background-image: var(--gradien-hero),
+                url(../images/tab-dark-bg.jpg);
     }
-
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .hero {
+        background-image: var(--gradien-hero),
+                url(../images/tab-dark-bg-xx.jpg);}
+    }
     .hero-caption {
         max-width: 496px;
         font-weight: 700;
@@ -219,4 +225,11 @@ max-width: 584px;
     .footer-input {
         min-width: 264px;
       }  
+
+      /* ------POrtfolio ----------------*/
+          .section-portfolio {
+              padding-top: 64px;
+              padding-bottom: 96px;
+          }
+          
  }

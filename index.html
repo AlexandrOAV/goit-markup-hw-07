@@ -32,7 +32,7 @@
             ><span class="logo">Web</span>Studio</a
           >
 
-          <button type="button" class="menu-open-btn">
+          <button type="button" class="menu-open-btn" data-menu-open>
             <svg class="icon-menu-open-btn" width="32" height="22">
               <use href="./images/icons.svg#icon-menu-hamburger"></use>
             </svg>
@@ -66,10 +66,10 @@
           </ul>
         </address>
       </div>
-      <div class="mob-menu-block">
+      <div class="mob-menu-block is-hidden" data-menu>
         <div class="container">
           <div>
-            <button type="button" class="mob-close-button" data-modal-close>
+            <button type="button" class="mob-close-button" data-menu-close>
               <svg class="mob-icon-close-button" width="8" height="8">
                 <use href="./images/icons.svg#icon-cross"></use>
               </svg>
@@ -218,6 +218,7 @@
           <ul class="job-list list">
             <li class="job-item">
               <img
+                srcset="./images/img_1.jpg 1x, ./images/img_1-2x.jpg 2x"
                 src="./images/img_1.jpg"
                 alt="monitor with graphs"
                 width="360"
@@ -226,6 +227,7 @@
             </li>
             <li class="job-item">
               <img
+                srcset="./images/img_2.jpg 1x, ./images/img_2-2x.jpg 2x"
                 src="./images/img_2.jpg"
                 alt="smartphone with multiple screens"
                 width="360"
@@ -234,6 +236,7 @@
             </li>
             <li class="job-item">
               <img
+                srcset="./images/img_3.jpg 1x, ./images/img_3-2x.jpg 2x"
                 src="./images/img_3.jpg"
                 alt="smartphone with laptop"
                 width="360"
@@ -250,6 +253,7 @@
           <ul class="team-list list">
             <li class="team-item">
               <img
+                srcset="./images/cartimg_1.jpg 1x, ./images/cartimg_1-2x.jpg 2x"
                 src="./images/cartimg_1.jpg"
                 alt="Photo Mark Guerrero"
                 width="264"
@@ -291,6 +295,7 @@
 
             <li class="team-item">
               <img
+                srcset="./images/cartimg_2.jpg 1x, ./images/cartimg_2-2x.jpg 2x"
                 src="./images/cartimg_2.jpg"
                 alt="Photo Tom Ford"
                 width="264"
@@ -332,6 +337,7 @@
 
             <li class="team-item">
               <img
+                srcset="./images/cartimg_3.jpg 1x, ./images/cartimg_3-2x.jpg 2x"
                 src="./images/cartimg_3.jpg"
                 alt="Photo Camila Garcia"
                 width="264"
@@ -373,6 +379,7 @@
 
             <li class="team-item">
               <img
+                srcset="./images/cartimg_4.jpg 1x, ./images/cartimg_4-2x.jpg 2x"
                 src="./images/cartimg_4.jpg"
                 alt="Photo Daniel Wilson"
                 width="264"
@@ -620,5 +627,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

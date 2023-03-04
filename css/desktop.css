@@ -5,13 +5,43 @@
         padding-right: 15px;
     }
 
-    /* ---------section-hero ------------*/
+           
+           .header-nav {
+             gap: 76px;
+            
+           }
+          
+           /* heder address  */
+        
+        .contact-list {
+            display: flex;
+            gap: 40px;
+        }
+           .contact-link {
+               font-size: 16px;
+               line-height: calc(24 / 16);
+            }
+    
+           .contact-item:not(:last-of-type) {
+               margin-bottom: 0;
+           }
+    
+             /* ---------section-hero ------------*/
     .hero {
         padding-top: 188px;
         padding-bottom: 188px;
         max-width: 1440px;
+        background-image: var(--gradien-hero),
+                url(../images/desk-people-office.jpg);
     }
-
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .hero {
+        background-image: var(--gradien-hero),
+            url(../images/desc-people-office-xx.jpg);
+    }
+}
 
     .hero-btn {
         margin-top: 48px;
@@ -140,5 +170,9 @@
 
  .footer-input {
      width: 100%;
+ }
+ /* -------portfolio-------------- */
+ .work-item {
+     width: calc((100% - 2*24px)/3);
  }
  }

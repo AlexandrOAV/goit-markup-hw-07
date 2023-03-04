@@ -25,13 +25,19 @@
   </head>
   <body>
     <!-- Шапка сайту -->
-    <!-- <header class="header-page">
-      <div class="conteiner header-conteiner">
-      
+    <header class="header-page">
+      <div class="container header-container">
         <nav class="header-nav">
           <a class="link-logo link" href="./index.html"
             ><span class="logo">Web</span>Studio</a
           >
+
+          <button type="button" class="menu-open-btn" data-menu-open>
+            <svg class="icon-menu-open-btn" width="32" height="22">
+              <use href="./images/icons.svg#icon-menu-hamburger"></use>
+            </svg>
+          </button>
+
           <ul class="menu list">
             <li class="menu-item">
               <a class="menu-link link" href="./index.html">Studio</a>
@@ -46,7 +52,7 @@
             </li>
           </ul>
         </nav>
-        
+
         <address class="contact">
           <ul class="contact-list list">
             <li class="contact-item">
@@ -62,7 +68,82 @@
           </ul>
         </address>
       </div>
-    </header> -->
+      <div class="mob-menu-block is-hidden" data-menu>
+        <div class="container">
+          <div>
+            <button type="button" class="mob-close-button" data-menu-close>
+              <svg class="mob-icon-close-button" width="8" height="8">
+                <use href="./images/icons.svg#icon-cross"></use>
+              </svg>
+            </button>
+            <nav class="mob-header-nav">
+              <ul class="mob-menu list">
+                <li class="mob-menu-item">
+                  <a class="mob-menu-link current link" href="./index.html"
+                    >Studio</a
+                  >
+                </li>
+                <li class="mob-menu-item">
+                  <a class="mob-menu-link link" href="./portfolio.html"
+                    >Portfolio</a
+                  >
+                </li>
+                <li class="mob-menu-item">
+                  <a class="mob-menu-link link" href="">Contacts</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="mob-contact">
+            <ul class="mob-contact-list list">
+              <li class="mob-contact-item">
+                <a class="mob-contact-link-phon link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="mob-contact-item">
+                <a
+                  class="mob-contact-link-mail link"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="mob-social-list list">
+              <li class="mob-social-item">
+                <a href="http://" class="mob-social-link link">
+                  <svg class="mob-social-ikon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mob-social-item">
+                <a href="http://" class="mob-social-link link">
+                  <svg class="mob-social-ikon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mob-social-item">
+                <a href="http://" class="mob-social-link link">
+                  <svg class="mob-social-ikon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mob-social-item">
+                <a href="http://" class="mob-social-link link">
+                  <svg class="mob-social-ikon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
     <main>
       <section class="section-portfolio">
         <div class="container">
@@ -92,11 +173,20 @@
             <li class="work-item">
               <a href="" class="link-work-list link">
                 <div class="work-overley">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/mob-portfolio_1.jpg    1x,
+                        ./images/mob-portfolio_1-2x.jpg 2x
+                      "
+                      media="min-width: 480px"
+                    />
+                  </picture>
                   <img
-                    src="./images/portfolio_1.jpg"
+                    src="./images/mob-portfolio_1.jpg"
                     alt="Banking application"
-                    width="360"
-                    height="300"
+                    width="396"
+                    height="280"
                   />
                   <p class="text-work-overlay">
                     14 Stylish and User-Friendly App Design Concepts · Task
