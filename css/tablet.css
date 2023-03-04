@@ -172,7 +172,7 @@
     }
 
     .customers-item {
-        width: calc((100% - 48px) / 3);
+        width: calc((100% - 24px) / 2);
 
     }
 
@@ -227,9 +227,21 @@ max-width: 584px;
       }  
 
       /* ------POrtfolio ----------------*/
-          .section-portfolio {
-              padding-top: 64px;
-              padding-bottom: 96px;
-          }
-          
+                    .filter-list {
+                    flex-wrap: nowrap;
+                    gap: 24px;
+                    justify-content: center;
+                    margin-bottom: 64px;
+                  }
+    .work-list {
+       
+        justify-content: start;
+        column-gap: 24px;
+        row-gap: 72px;}
+        
+    .work-item {
+            width: calc((100% - 24px) / 2);
+        }
+            
+                         
  }
