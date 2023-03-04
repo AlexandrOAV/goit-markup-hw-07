@@ -624,6 +624,7 @@ padding-bottom: 48px;
   row-gap: 16px;
   justify-content: start;
   margin-bottom: 48px;
+ max-width: 279px;
  }
 
  .radio-filter {

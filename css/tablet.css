@@ -232,6 +232,7 @@ max-width: 584px;
                     gap: 24px;
                     justify-content: center;
                     margin-bottom: 64px;
+                    max-width: none;
                   }
     .work-list {
        
